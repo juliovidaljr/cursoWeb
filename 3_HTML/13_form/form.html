@@ -1,0 +1,38 @@
+<h1> Formulário </h1>
+
+<form action="http://localhost:3300/user" method="POST">
+    <input type="text" name="nome">
+    <input type="password" name="senha">
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="admin"> Admin
+        <input type="radio" name="tipo" value="regular"> Regular User
+        <input type="radio" name="tipo" value="premium"> Premium User
+    </div>
+    <div>
+        <input type="checkbox" name="ativo"> Deficiência
+    </div>
+    <select name="UF" >
+        <option value=""> Selecione seu Estado</option>
+        <option value="ES"> Espírito Santo</option>
+        <option value="MG"> Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP"> São Paulo</option>
+    </select>
+    <button>Cadastrar</button>
+</form>
+
+
+
+<style>
+    input,
+    textarea,
+    div {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=radio],
+    input[type=checkbox]{
+        display: inline;
+    }
+</style>
